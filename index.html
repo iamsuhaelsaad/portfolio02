@@ -1,0 +1,2566 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Md. Suhael MahMud Saad</title>
+    <meta name="description" content="Portfolio of Md. Suhael MahMud Saad, Materials Science and Engineering student at RUET." />
+    <meta name="author" content="Md. Suhael MahMud Saad" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Md. Suhael MahMud Saad" />
+    <meta property="og:description" content="Portfolio of Md. Suhael MahMud Saad, Materials Science and Engineering student at RUET." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Md. Suhael MahMud Saad" />
+    <meta name="twitter:description" content="Portfolio of Md. Suhael MahMud Saad, Materials Science and Engineering student at RUET." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ============================================================
+       ENHANCED MINIMALIST EDITION
+       Deep ink base · Emerald accents · Clean dot-grid background
+    ============================================================ */
+
+    :root {
+      --bg-base:        #03080f;
+      --bg-surface:     #060e1a;
+      --bg-card:        rgba(255, 255, 255, 0.010);
+      --bg-card-hover:  rgba(255, 255, 255, 0.026);
+      --border:         rgba(0, 200, 255, 0.12);
+      --border-hover:   rgba(0, 220, 255, 0.28);
+
+      --green-glow:     #00d4ff;
+      --green-mid:      #38e0ff;
+      --green-dim:      #0099cc;
+      --green-soft:     rgba(0, 212, 255, 0.28);
+
+      --text-primary:   #ffffff;
+      --text-secondary: #ffffff;
+      --text-muted:     #ffffffcc;
+
+      --accent:         #00d4ff;
+      --accent-rgb:     0, 212, 255;
+
+      --radius:         16px;
+      --radius-sm:      9px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    /* ============================================================
+       CUSTOM CURSOR
+    ============================================================ */
+    body, a, button, [role="button"], input, textarea, label { cursor: none !important; }
+
+    #cursor-dot {
+      position: fixed;
+      top: 0; left: 0;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--green-glow);
+      box-shadow: 0 0 8px rgba(0,212,255,0.9), 0 0 18px rgba(0,212,255,0.5);
+      pointer-events: none;
+      z-index: 99999;
+      transform: translate(-50%, -50%);
+      transition: width 0.15s, height 0.15s, opacity 0.2s, background 0.2s;
+      will-change: transform;
+    }
+    #cursor-ring {
+      position: fixed;
+      top: 0; left: 0;
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(0,212,255,0.5);
+      pointer-events: none;
+      z-index: 99998;
+      transform: translate(-50%, -50%);
+      transition: width 0.2s, height 0.2s, border-color 0.2s, opacity 0.2s;
+      will-change: transform;
+    }
+    /* Hover state — grows ring, swaps dot color */
+    body.cursor-hover #cursor-dot {
+      width: 10px; height: 10px;
+      background: #fff;
+      box-shadow: 0 0 12px rgba(255,255,255,0.7);
+    }
+    body.cursor-hover #cursor-ring {
+      width: 52px; height: 52px;
+      border-color: rgba(0,212,255,0.85);
+      box-shadow: 0 0 18px rgba(0,212,255,0.25);
+    }
+    /* Click state */
+    body.cursor-click #cursor-dot {
+      width: 6px; height: 6px;
+    }
+    body.cursor-click #cursor-ring {
+      width: 28px; height: 28px;
+      border-color: rgba(0,212,255,1);
+    }
+
+    body {
+      background-color: var(--bg-base);
+      background-image:
+        radial-gradient(ellipse 80% 60% at 20% 10%, rgba(0, 80, 140, 0.22) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 80% 85%, rgba(0, 60, 120, 0.15) 0%, transparent 55%),
+        radial-gradient(ellipse 50% 40% at 50% 50%, rgba(0, 40, 90, 0.12) 0%, transparent 70%);
+      color: var(--text-primary);
+      font-family: 'Inter', sans-serif;
+      font-size: 14.5px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .section-amount {
+      margin-top: 0.75rem;
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      letter-spacing: 0.06em;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+
+
+    /* ---- Ambient glow — blue top-left + gray bottom-right ---- */
+    body::after {
+      content: '';
+      position: fixed;
+      top: -20vh;
+      left: 10%;
+      width: 70vw;
+      height: 70vh;
+      background: radial-gradient(ellipse at center,
+        rgba(0, 150, 220, 0.07) 0%,
+        rgba(0, 80, 160, 0.03)  45%,
+        transparent               70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ---- Everything above bg ---- */
+    .navbar, section, footer { position: relative; z-index: 1; }
+
+    /* ============================================================
+       TYPOGRAPHY
+    ============================================================ */
+    h1, h2, h3, h4 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    /* ---- Stylish hero name ---- */
+    .hero-name {
+      display: inline-block;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-weight: 700;
+      letter-spacing: 0;
+      background: linear-gradient(135deg, #ffffff 30%, var(--green-mid) 70%, var(--green-glow) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: 0 0 30px rgba(0, 212, 255, 0.25);
+    }
+
+    /* ============================================================
+       NAVBAR
+    ============================================================ */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(7, 11, 20, 0.82);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 1rem;
+    }
+    .logo {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: var(--text-primary) !important;
+      text-decoration: none;
+      letter-spacing: -0.03em;
+    }
+    .text-gradient {
+      background: linear-gradient(135deg, var(--green-mid), var(--green-glow));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 0.2rem;
+      flex: 1;
+      justify-content: center;
+    }
+    .nav-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      padding: 0.4rem 0.75rem;
+      border-radius: 6px;
+      transition: color 0.2s, background 0.2s;
+    }
+    .nav-links a:hover {
+      color: var(--text-primary);
+      background: rgba(255,255,255,0.04);
+    }
+    .nav-links a.active {
+      color: var(--green-glow);
+      background: rgba(0, 212, 255, 0.08);
+      border-radius: 6px;
+    }
+    .nav-cta {
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(94,207,190,0.12);
+      color: var(--text-primary) !important;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      border: 1px solid rgba(94,207,190,0.25);
+      border-radius: var(--radius-sm);
+      padding: 0.5rem 1.1rem;
+      text-decoration: none;
+      transition: box-shadow 0.25s, transform 0.2s, background 0.2s;
+      letter-spacing: 0.01em;
+    }
+    .nav-cta:hover {
+      background: rgba(94,207,190,0.22);
+      box-shadow: 0 0 22px rgba(94,207,190,0.20);
+      transform: translateY(-1px);
+    }
+
+    /* Mobile nav toggle */
+    .nav-toggle {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--text-primary);
+      border-radius: 6px;
+      padding: 0.4rem;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+    }
+    @media(max-width: 768px) {
+      .nav-toggle { display: flex; }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0; right: 0;
+        background: var(--bg-base);
+        flex-direction: column;
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid var(--border);
+        gap: 0.25rem;
+        justify-content: flex-start;
+      }
+      .nav-cta { display: none; }
+      .nav-cta-mobile { display: flex !important; }
+      .nav-links.open { display: flex; }
+    }
+
+    /* ============================================================
+       SCROLL PROGRESS BAR
+    ============================================================ */
+    #scroll-progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--green-dim), var(--green-glow), var(--green-mid));
+      box-shadow: 0 0 10px rgba(var(--accent-rgb), 0.7), 0 0 20px rgba(var(--accent-rgb), 0.4);
+      z-index: 9999;
+      border-radius: 0 2px 2px 0;
+      transition: width 0.08s linear;
+    }
+
+    /* ============================================================
+       LAYOUT HELPERS
+    ============================================================ */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+    .section { padding: 6rem 0; }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+    .section-heading h2 {
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      color: var(--text-primary);
+      margin-bottom: 0.4rem;
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    .heading-bar {
+      width: 48px;
+      height: 2px;
+      background: var(--green-glow);
+      margin: 0.8rem auto 0;
+      border-radius: 2px;
+      box-shadow: 0 0 10px rgba(var(--accent-rgb), 0.6);
+    }
+
+    .grid { display: grid; gap: 1rem; }
+    .grid-3 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+    .grid-5 { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+
+    /* ============================================================
+       CARDS — Glassmorphism transparent
+    ============================================================ */
+    .card {
+      background: rgba(230, 255, 252, 0.007);
+      border: 1px solid rgba(80, 210, 190, 0.09);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      transition: border-color 0.3s, box-shadow 0.3s, transform 0.62s cubic-bezier(0.22,1,0.36,1), background 0.3s, opacity 0.62s cubic-bezier(0.22,1,0.36,1);
+    }
+    .card:hover {
+      border-color: rgba(100, 230, 210, 0.20);
+      background: rgba(230, 255, 252, 0.022);
+      box-shadow:
+        0 0 0 1px rgba(94, 207, 190, 0.06),
+        0 20px 48px rgba(0, 0, 0, 0.50),
+        0 0 40px rgba(94, 207, 190, 0.06);
+      transform: translateY(-4px);
+    }
+    .card h3 {
+      color: var(--text-primary);
+      font-size: 1rem;
+      margin: 0.75rem 0 0.35rem;
+    }
+    .card p {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      line-height: 1.65;
+    }
+
+    /* Icon accents */
+    .icon-accent { color: var(--green-glow); }
+    .icon-primary { color: var(--green-mid); }
+    .muted { color: var(--text-muted); }
+    .small { font-size: 0.875rem; }
+    .italic { font-style: italic; }
+
+    .pill {
+      display: inline-block;
+      background: rgba(94,207,190,0.08);
+      border: 1px solid rgba(94,207,190,0.20);
+      color: var(--green-mid);
+      border-radius: 20px;
+      font-size: 0.76rem;
+      padding: 0.2rem 0.8rem;
+      margin-top: 0.5rem;
+      font-weight: 500;
+    }
+
+    /* ============================================================
+       BACK TO TOP BUTTON
+    ============================================================ */
+    #back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 999;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(0, 212, 255, 0.10);
+      border: 1px solid rgba(0, 212, 255, 0.30);
+      color: var(--green-glow);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transform: translateY(16px) scale(0.85);
+      pointer-events: none;
+      transition: opacity 0.3s, transform 0.3s, background 0.25s, box-shadow 0.25s;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    #back-to-top.visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      pointer-events: auto;
+    }
+    #back-to-top:hover {
+      background: rgba(0, 212, 255, 0.22);
+      box-shadow: 0 0 20px rgba(0, 212, 255, 0.35);
+      transform: translateY(-3px) scale(1.08);
+    }
+
+    /* ============================================================
+       VISITOR COUNTER
+    ============================================================ */
+    .visitor-counter {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: rgba(0, 212, 255, 0.06);
+      border: 1px solid rgba(0, 212, 255, 0.15);
+      border-radius: 20px;
+      padding: 0.3rem 0.85rem;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 0.6rem;
+      letter-spacing: 0.03em;
+    }
+    .visitor-counter svg {
+      color: var(--green-glow);
+      flex-shrink: 0;
+    }
+    .visitor-counter-count {
+      font-weight: 600;
+      color: var(--green-mid);
+    }
+
+    /* ============================================================
+       TYPEWRITER
+    ============================================================ */
+    .typewriter-text {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+    }
+    .typewriter-cursor {
+      display: inline-block;
+      color: var(--green-glow);
+      font-weight: 300;
+      animation: blink 0.75s step-end infinite;
+      margin-left: 2px;
+    }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+    /* Floating hero orbs */
+    .hero-orbs {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,212,255,0.15) 0%, transparent 70%);
+      animation: floatOrb linear infinite;
+    }
+    .orb:nth-child(1) { width:180px;height:180px; left:8%;  top:20%; animation-duration:14s; animation-delay:0s; }
+    .orb:nth-child(2) { width:120px;height:120px; right:12%;top:35%; animation-duration:18s; animation-delay:-5s; }
+    .orb:nth-child(3) { width: 90px;height: 90px; left:20%;bottom:25%;animation-duration:12s; animation-delay:-8s; }
+    .orb:nth-child(4) { width:140px;height:140px; right:20%;bottom:20%;animation-duration:20s; animation-delay:-3s; }
+    @keyframes floatOrb {
+      0%   { transform: translate(0,0) scale(1);   opacity:0.5; }
+      25%  { transform: translate(18px,-22px) scale(1.08); opacity:0.8; }
+      50%  { transform: translate(-12px,16px) scale(0.95); opacity:0.5; }
+      75%  { transform: translate(20px,10px) scale(1.05); opacity:0.7; }
+      100% { transform: translate(0,0) scale(1);   opacity:0.5; }
+    }
+
+    /* ============================================================
+       HERO
+    ============================================================ */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+    .hero-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: calc(100vh - 64px);
+      padding: 4rem 0;
+      width: 100%;
+    }
+    /* Split hero layout */
+    .hero-split {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+      text-align: center;
+    }
+    .hero-content-left {
+      flex: 1;
+      align-items: center;
+      text-align: center;
+    }
+    .hero-content {
+      max-width: 700px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Photo column */
+    .hero-photo-col {
+      flex-shrink: 0;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-photo-ring {
+      width: 360px;
+      height: 360px;
+      border-radius: 50%;
+      padding: 4px;
+      background: linear-gradient(135deg, var(--green-glow), var(--green-dim), transparent 70%);
+      box-shadow:
+        0 0 0 1px rgba(0,212,255,0.18),
+        0 0 60px rgba(0,212,255,0.18),
+        0 0 120px rgba(0,80,160,0.15);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-photo-ring::before {
+      content: '';
+      position: absolute;
+      inset: -8px;
+      border-radius: 50%;
+      border: 1px solid rgba(0,212,255,0.12);
+      animation: rotateRing 8s linear infinite;
+    }
+    @keyframes rotateRing {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+    .hero-photo-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center center;
+      display: block;
+      background: #060e1a;
+      transform: scale(1.5);
+    }
+    .hero-photo-badge {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(6,14,26,0.88);
+      border: 1px solid rgba(0,212,255,0.22);
+      color: var(--green-mid);
+      font-size: 0.72rem;
+      font-weight: 600;
+      font-family: 'Space Grotesk', sans-serif;
+      padding: 0.35rem 0.8rem;
+      border-radius: 20px;
+      backdrop-filter: blur(12px);
+      white-space: nowrap;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+    .hero-badge-top  { top: 16px;  right: -20px; }
+    .hero-badge-bottom { bottom: 20px; left: -20px; }
+
+    @media (max-width: 900px) {
+      .hero-split {
+        flex-direction: column;
+        text-align: center;
+        gap: 2.5rem;
+      }
+      .hero-content-left { align-items: center; }
+      .hero-photo-ring { width: 265px; height: 265px; }
+      .hero-badge-top  { top: 8px;  right: -10px; }
+      .hero-badge-bottom { bottom: 8px; left: -10px; }
+    }
+    @media (max-width: 480px) {
+      .hero-photo-ring { width: 215px; height: 215px; }
+    }
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--green-mid);
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      padding: 0.35rem 1rem;
+      border: 1px solid rgba(94,207,190,0.20);
+      border-radius: 100px;
+      background: rgba(94,207,190,0.06);
+    }
+    .hero h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      font-weight: 800;
+      color: var(--text-primary);
+      line-height: 1.0;
+      margin-bottom: 0.3rem;
+      letter-spacing: -0.04em;
+    }
+    .hero-subtitle {
+      display: block;
+      font-size: clamp(1.2rem, 3vw, 2rem);
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      margin-top: 0.25rem;
+    }
+    .hero-desc {
+      color: var(--text-secondary);
+      max-width: 50ch;
+      line-height: 1.75;
+      margin: 1.5rem 0 0;
+      font-size: 1.05rem;
+      text-align: center;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 0.75rem;
+      margin-top: 2.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: rgba(94,207,190,0.15);
+      color: var(--text-primary) !important;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      border: 1px solid rgba(94,207,190,0.28);
+      border-radius: var(--radius-sm);
+      padding: 0.7rem 1.4rem;
+      text-decoration: none;
+      transition: box-shadow 0.25s, transform 0.2s, background 0.2s;
+    }
+    .btn-primary:hover {
+      background: rgba(94,207,190,0.25);
+      box-shadow: 0 0 30px rgba(94,207,190,0.22);
+      transform: translateY(-2px);
+    }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: rgba(94,207,190,0.15);
+      color: var(--text-primary) !important;
+      font-family: 'Syne', sans-serif;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border: 1px solid rgba(94,207,190,0.28);
+      border-radius: var(--radius-sm);
+      padding: 0.7rem 1.4rem;
+      text-decoration: none;
+      transition: box-shadow 0.25s, background 0.2s, transform 0.2s;
+    }
+    .btn-secondary:hover {
+      background: rgba(94,207,190,0.25);
+      box-shadow: 0 0 30px rgba(94,207,190,0.22);
+      transform: translateY(-2px);
+    }
+    .btn-cv {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: rgba(94,207,190,0.15);
+      color: var(--text-primary) !important;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      border: 1px solid rgba(94,207,190,0.28);
+      border-radius: var(--radius-sm);
+      padding: 0.7rem 1.4rem;
+      text-decoration: none;
+      transition: box-shadow 0.25s, transform 0.2s, background 0.2s;
+      cursor: pointer;
+    }
+    .btn-cv:hover {
+      background: rgba(94,207,190,0.25);
+      box-shadow: 0 0 30px rgba(94,207,190,0.22);
+      transform: translateY(-2px);
+    }
+    .hero-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--green-glow);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      transition: gap 0.2s;
+    }
+    .hero-link:hover { gap: 0.8rem; }
+    @keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(7px)} }
+    .bounce { animation: bounce 1.6s ease-in-out infinite; }
+
+    /* ============================================================
+       ABOUT
+    ============================================================ */
+    .about-desc {
+      color: var(--text-secondary);
+      max-width: 65ch;
+      margin: 0 auto 3rem;
+      text-align: center;
+      line-height: 1.85;
+      font-size: 1.05rem;
+    }
+    .skill-card { text-align: center; }
+
+    /* ============================================================
+       EDUCATION / TIMELINE
+    ============================================================ */
+    .edu-list { display: flex; flex-direction: column; gap: 0.75rem; max-width: 56rem; margin: 0 auto; }
+    .edu-card { max-width: 56rem; margin: 0 auto; width: 100%; }
+    .edu-row { display: flex; align-items: flex-start; gap: 1.25rem; }
+    .icon-box {
+      background: rgba(94,207,190,0.05);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--green-mid);
+      flex-shrink: 0;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .card:hover .icon-box { background: rgba(94,207,190,0.10); border-color: rgba(94,207,190,0.22); }
+    .icon-box-accent { background: rgba(94,207,190,0.08); color: var(--green-glow); }
+    .edu-card h3 { color: var(--text-primary); font-size: 1.05rem; margin-bottom: 0.3rem; }
+
+    /* ============================================================
+       RESEARCH CARDS
+    ============================================================ */
+    .research-card .icon-accent { margin-bottom: 0.5rem; display: block; }
+
+    /* ============================================================
+       CONTACT CARDS
+    ============================================================ */
+    .contact-card { text-align: center; }
+    .contact-label {
+      display: block;
+      color: var(--text-muted);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin: 0.6rem 0 0.3rem;
+      font-weight: 600;
+    }
+    .contact-value {
+      color: var(--green-mid);
+      text-decoration: none;
+      font-size: 0.9rem;
+      word-break: break-all;
+      transition: color 0.2s;
+    }
+    .contact-value:hover { color: var(--green-glow); text-decoration: underline; }
+    .contact-row { display: flex; align-items: center; gap: 0.5rem; justify-content: center; flex-wrap: wrap; }
+    .whatsapp-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      background: rgba(94,207,190,0.06);
+      border: 1px solid rgba(94,207,190,0.18);
+      color: var(--green-glow);
+      border-radius: 100px;
+      padding: 0.2rem 0.65rem;
+      font-size: 0.75rem;
+      text-decoration: none;
+      transition: background 0.2s;
+      font-weight: 500;
+    }
+    .whatsapp-btn:hover { background: rgba(94,207,190,0.14); }
+    .portfolio-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      margin-top: 0.5rem;
+      background: rgba(94,207,190,0.05);
+      border: 1px solid rgba(94,207,190,0.18);
+      color: var(--green-glow);
+      border-radius: 100px;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.75rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+    .portfolio-link:hover {
+      background: rgba(94,207,190,0.12);
+      box-shadow: 0 0 12px rgba(94,207,190,0.18);
+    }
+
+    /* ============================================================
+       TUITION SECTION
+    ============================================================ */
+    .tuition-promo-card {
+      max-width: 900px;
+      margin: 0 auto;
+      background: rgba(230, 255, 252, 0.007);
+      border: 1px solid rgba(80,210,190,0.10);
+      border-radius: 18px;
+      overflow: hidden;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .tuition-promo-card:hover {
+      border-color: rgba(100,230,210,0.20);
+      box-shadow: 0 0 50px rgba(94,207,190,0.07), 0 12px 40px rgba(0,0,0,0.4);
+    }
+    .tuition-promo-inner { display: flex; gap: 0; }
+    .tuition-text { flex: 1; padding: 2.5rem; }
+    .tuition-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(94,207,190,0.08);
+      border: 1px solid rgba(94,207,190,0.20);
+      color: var(--green-glow);
+      border-radius: 100px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.25rem 0.8rem;
+      margin-bottom: 1.1rem;
+      letter-spacing: 0.04em;
+    }
+    .tuition-text h3 {
+      color: var(--text-primary);
+      font-family: 'Syne', sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+    .tuition-text p {
+      color: var(--text-secondary);
+      font-size: 0.93rem;
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+    }
+    .tuition-features {
+      list-style: none;
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .tuition-features li {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+    .tuition-features li svg { color: var(--green-glow); flex-shrink: 0; }
+    .tuition-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(94,207,190,0.15);
+      color: var(--text-primary);
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 0.65rem 1.4rem;
+      border: 1px solid rgba(94,207,190,0.28);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: box-shadow 0.25s, transform 0.2s, background 0.2s;
+    }
+    .tuition-cta:hover {
+      background: rgba(94,207,190,0.25);
+      box-shadow: 0 0 28px rgba(94,207,190,0.22);
+      transform: translateY(-2px);
+    }
+    .tuition-visual {
+      width: 240px;
+      flex-shrink: 0;
+      background: rgba(94,207,190,0.02);
+      border-left: 1px solid rgba(80,210,190,0.10);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .tuition-icon-wrap {
+      color: var(--green-glow);
+      opacity: 0.7;
+    }
+    .tuition-stats { display: flex; flex-direction: column; gap: 0.8rem; width: 100%; }
+    .tuition-stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(94,207,190,0.04);
+      border: 1px solid rgba(80,210,190,0.10);
+      border-radius: 10px;
+      padding: 0.65rem;
+      transition: background 0.2s;
+    }
+    .tuition-stat:hover { background: rgba(94,207,190,0.10); }
+    .stat-num { font-family: 'Syne', sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--green-glow); line-height: 1; }
+    .stat-label { font-size: 0.7rem; color: var(--text-muted); margin-top: 0.2rem; text-transform: uppercase; letter-spacing: 0.08em; }
+
+    @media (max-width: 640px) {
+      .tuition-promo-inner { flex-direction: column; }
+      .tuition-visual { width: 100%; border-left: none; border-top: 1px solid rgba(110,155,220,0.14); flex-direction: row; justify-content: space-around; padding: 1.5rem; }
+      .tuition-stats { flex-direction: row; gap: 0.6rem; }
+      .tuition-icon-wrap { display: none; }
+    }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    .footer {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      background: rgba(5, 8, 18, 0.7);
+    }
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .footer-dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--green-glow);
+      opacity: 0.5;
+      display: inline-block;
+      margin: 0 0.4rem;
+    }
+
+    /* ============================================================
+       REVEAL ANIMATIONS — Enhanced
+    ============================================================ */
+
+    /* Base: fade + slide up */
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+                  transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .reveal.visible { opacity: 1; transform: none; }
+    .hero .reveal { opacity: 1 !important; transform: none !important; }
+
+    /* Slide from left */
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-40px);
+      transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+                  transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .reveal-left.visible { opacity: 1; transform: none; }
+
+    /* Slide from right */
+    .reveal-right {
+      opacity: 0;
+      transform: translateX(40px);
+      transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+                  transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .reveal-right.visible { opacity: 1; transform: none; }
+
+    /* Scale up (for section headings) */
+    .reveal-scale {
+      opacity: 0;
+      transform: scale(0.94) translateY(16px);
+      transition: opacity 0.65s cubic-bezier(0.34, 1.56, 0.64, 1),
+                  transform 0.65s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .reveal-scale.visible { opacity: 1; transform: none; }
+
+    /* Fade only (subtle, for text blocks) */
+    .reveal-fade {
+      opacity: 0;
+      transition: opacity 0.9s ease;
+    }
+    .reveal-fade.visible { opacity: 1; }
+
+    /* Stagger delays for child cards */
+    .stagger-children > *:nth-child(1)  { transition-delay: 0ms; }
+    .stagger-children > *:nth-child(2)  { transition-delay: 80ms; }
+    .stagger-children > *:nth-child(3)  { transition-delay: 160ms; }
+    .stagger-children > *:nth-child(4)  { transition-delay: 240ms; }
+    .stagger-children > *:nth-child(5)  { transition-delay: 320ms; }
+    .stagger-children > *:nth-child(6)  { transition-delay: 400ms; }
+    .stagger-children > *:nth-child(7)  { transition-delay: 480ms; }
+    .stagger-children > *:nth-child(8)  { transition-delay: 560ms; }
+    .stagger-children > *:nth-child(9)  { transition-delay: 640ms; }
+    .stagger-children > *:nth-child(10) { transition-delay: 720ms; }
+
+    /* Section heading bar animation */
+    .heading-bar {
+      transform-origin: left center;
+      transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.6s ease;
+    }
+    .reveal-scale:not(.visible) .heading-bar {
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    .reveal-scale.visible .heading-bar {
+      transform: scaleX(1);
+      opacity: 1;
+      transition-delay: 0.3s;
+    }
+
+    /* ============================================================
+       DIVIDER — hidden
+    ============================================================ */
+    .section-divider {
+      display: none;
+    }
+
+    /* ============================================================
+       MOLECULE CANVAS
+    ============================================================ */
+    #molecule-canvas {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.10;
+    }
+
+    /* ============================================================
+       HERO PARTICLE CANVAS
+    ============================================================ */
+    #hero-particle-canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ============================================================
+       STAT BAR (hero stats)
+    ============================================================ */
+    .hero-stats {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .hero-stat-item { text-align: center; }
+    .hero-stat-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--green-glow);
+      line-height: 1;
+    }
+    .hero-stat-label {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      margin-top: 0.3rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    /* ============================================================
+       DIRECT MESSAGE FORM
+    ============================================================ */
+    .message-form-wrap {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .message-form-card {
+      background: rgba(0, 212, 255, 0.025);
+      border: 1px solid rgba(0, 212, 255, 0.14);
+      border-radius: var(--radius);
+      padding: 2.5rem 2rem;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .message-form-card:hover {
+      border-color: rgba(0, 212, 255, 0.26);
+      box-shadow: 0 0 40px rgba(0, 212, 255, 0.06), 0 16px 40px rgba(0,0,0,0.45);
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    @media(max-width: 560px) {
+      .form-row { grid-template-columns: 1fr; }
+      .message-form-card { padding: 1.75rem 1.25rem; }
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-bottom: 1rem;
+    }
+    .form-group:last-of-type { margin-bottom: 0; }
+    .form-label {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .form-input,
+    .form-textarea {
+      background: rgba(255, 255, 255, 0.032);
+      border: 1px solid rgba(0, 212, 255, 0.13);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      padding: 0.65rem 0.9rem;
+      width: 100%;
+      outline: none;
+      transition: border-color 0.22s, box-shadow 0.22s, background 0.22s;
+    }
+    .form-input::placeholder,
+    .form-textarea::placeholder { color: var(--text-muted); }
+    .form-input:focus,
+    .form-textarea:focus {
+      border-color: rgba(0, 212, 255, 0.45);
+      background: rgba(0, 212, 255, 0.045);
+      box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.08);
+    }
+    .form-textarea {
+      resize: vertical;
+      min-height: 130px;
+      line-height: 1.6;
+    }
+    .form-send-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      width: 100%;
+      background: rgba(0, 212, 255, 0.12);
+      color: var(--green-glow);
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.92rem;
+      border: 1px solid rgba(0, 212, 255, 0.28);
+      border-radius: var(--radius-sm);
+      padding: 0.8rem 1.6rem;
+      cursor: pointer;
+      margin-top: 1.4rem;
+      transition: background 0.25s, box-shadow 0.25s, transform 0.2s;
+      letter-spacing: 0.01em;
+    }
+    .form-send-btn:hover {
+      background: rgba(0, 212, 255, 0.22);
+      box-shadow: 0 0 30px rgba(0, 212, 255, 0.22);
+      transform: translateY(-2px);
+    }
+    .form-send-btn:active { transform: translateY(0); }
+    .form-send-btn:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+      transform: none;
+    }
+    .form-notice {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      margin-top: 1rem;
+      color: var(--text-muted);
+      font-size: 0.78rem;
+    }
+    .form-notice svg { flex-shrink: 0; color: var(--green-dim); }
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      animation: fadeInUp 0.4s ease both;
+    }
+    .form-success-icon {
+      width: 52px; height: 52px;
+      background: rgba(0, 212, 255, 0.10);
+      border: 1px solid rgba(0, 212, 255, 0.25);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      color: var(--green-glow);
+    }
+    .form-success h3 {
+      color: var(--text-primary);
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+    }
+    .form-success p { color: var(--text-secondary); font-size: 0.9rem; }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .form-error-msg {
+      display: none;
+      color: #ff6b6b;
+      font-size: 0.78rem;
+      margin-top: 0.3rem;
+    }
+
+
+  </style>
+  </head>
+
+  <body>
+    <!-- Custom Cursor -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress-bar"></div>
+
+    <!-- Molecule Background Canvas -->
+    <canvas id="molecule-canvas"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-inner">
+        <a href="#" class="logo">Suhael<span class="text-gradient">.</span></a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#tuition">Tuition</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#message">Message</a></li>
+          <li style="display:none" class="nav-cta-mobile"><a href="#contact" class="nav-cta" style="display:inline-flex;margin-top:0.5rem;">Hire Me</a></li>
+        </ul>
+
+        <a href="#contact" class="nav-cta">Hire Me</a>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" style="position:relative;">
+      <canvas id="hero-particle-canvas"></canvas>
+      <div class="hero-orbs">
+        <div class="orb"></div>
+        <div class="orb"></div>
+        <div class="orb"></div>
+        <div class="orb"></div>
+      </div>
+      <div class="container hero-inner hero-split">
+        <!-- Photo: shown first -->
+        <!-- Photo column -->
+        <div class="hero-photo-col reveal" style="transition-delay:0ms">
+          <div class="hero-photo-ring">
+            <img src="profile.jpg" alt="Md. Suhael MahMud Saad" class="hero-photo-img" />
+          </div>
+          <div class="hero-photo-badge hero-badge-top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="hero-photo-badge hero-badge-bottom">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+        </div>
+
+        <!-- Text content -->
+        <div class="hero-content hero-content-left">
+          <span class="reveal hero-tag">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg>
+            Materials Science &amp; Engineering
+          </span>
+          <h1 class="reveal" style="transition-delay:100ms;text-align:center;">
+            <span class="hero-name">Md. Suhael MahMud Saad</span>
+            <span class="hero-subtitle" style="text-align:center;display:block;"><span class="text-gradient typewriter-text" id="typewriter"></span><span class="typewriter-cursor">|</span></span>
+          </h1>
+          <p class="reveal hero-desc" style="transition-delay:250ms;text-align:center;">
+            A Materials Science and Engineering student with a strong passion for engineering materials.
+            Turning curiosity into innovation through research and hands-on learning.
+          </p>
+          <div class="reveal hero-actions" style="transition-delay:380ms;justify-content:center;">
+            <a href="#about" class="btn-primary">
+              Explore My Work
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="#contact" class="btn-secondary">Get In Touch</a>
+            <a href="#" class="btn-cv" id="cv-download-btn" onclick="downloadCV(event)">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download CV
+            </a>
+          </div>
+          <div class="reveal hero-stats" style="transition-delay:500ms;justify-content:flex-start;">
+            <div class="hero-stat-item">
+              <div class="hero-stat-num">RUET</div>
+              <div class="hero-stat-label">University</div>
+            </div>
+            <div class="hero-stat-item">
+              <div class="hero-stat-num">MSE</div>
+              <div class="hero-stat-label">Discipline</div>
+            </div>
+          </div>
+          <a href="#about" class="reveal hero-link" style="transition-delay:600ms;margin-top:2rem">
+            Scroll to explore
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bounce"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="reveal section-heading">
+          <h2>About Me</h2>
+          <p class="subtitle">Engineer · Educator · Researcher · Open to Internship</p>
+          <div class="heading-bar"></div>
+          <p class="section-amount">2+ yrs tutoring &nbsp;·&nbsp; 3 active roles &nbsp;·&nbsp; 1 university</p>
+        </div>
+        <p class="reveal about-desc" style="transition-delay:100ms">
+          Materials Science &amp; Engineering student at RUET with two years of hands-on experience in engineering design, lab-based problem solving, and team leadership. I also tutor Math, Physics, and Chemistry — which has sharpened my ability to communicate complex ideas clearly across any audience. I'm seeking an industry role in materials testing, manufacturing, product development, or quality where I can contribute from day one. Detail-oriented, dependable, and genuinely passionate about turning engineering knowledge into real-world results.
+        </p>
+        <div class="grid grid-5">
+          <div class="reveal card" style="transition-delay:150ms">
+            <svg class="icon-accent" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6L4 20a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2L15 8V2"/><path d="M9 2h6"/></svg>
+            <h3>Research Enthusiast</h3>
+            <p>Exploring metals, polymers, and hydrogen energy — keen on R&amp;D and product innovation.</p>
+          </div>
+          <div class="reveal card" style="transition-delay:250ms">
+            <svg class="icon-accent" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+            <h3>Hydrogen Energy</h3>
+            <p>Passionate about hydrogen as a clean fuel — from storage to real-world applications.</p>
+          </div>
+          <div class="reveal card" style="transition-delay:350ms">
+            <svg class="icon-accent" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.5 21a2.5 2.5 0 0 1-2.5-2.5V14H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3V3.5a2.5 2.5 0 0 1 5 0V6h3a2 2 0 0 1 2 2v3.5"/><path d="M15 14h6"/><path d="M18 11v6"/></svg>
+            <h3>Passionate Educator</h3>
+            <p>2+ years tutoring HSC students in Physics, Chemistry &amp; Math with a results-focused approach.</p>
+          </div>
+          <div class="reveal card" style="transition-delay:450ms">
+            <svg class="icon-accent" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+            <h3>Engineering Design</h3>
+            <p>Proficient in AutoCAD, SolidWorks &amp; MATLAB — bridging theory with practical design.</p>
+          </div>
+          <div class="reveal card" style="transition-delay:550ms">
+            <svg class="icon-accent" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            <h3>Team Leadership</h3>
+            <p>Active in RUET Materials Club, Debating Club &amp; SCADR — leading with initiative.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Education -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="reveal section-heading">
+          <h2>Education</h2>
+          <div class="heading-bar"></div>
+          <p class="section-amount">3 institutions &nbsp;·&nbsp; A+ in HSC &nbsp;·&nbsp; Est. Graduation 2027</p>
+        </div>
+        <div class="edu-list">
+          <div class="reveal card edu-card" style="transition-delay:100ms">
+            <div class="edu-row">
+              <div class="icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <div>
+                <h3>BSc in Materials Science and Engineering</h3>
+                <p class="muted">Rajshahi University of Engineering &amp; Technology (RUET)</p>
+                <p class="muted small" style="margin-top:0.25rem">Sep 2023 – Dec 2027 · Seeking internship opportunities</p>
+                <span class="pill">Currently Enrolled</span>
+              </div>
+            </div>
+          </div>
+          <div class="reveal card edu-card" style="transition-delay:200ms">
+            <div class="edu-row">
+              <div class="icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 6 8-4 8 4"/><path d="m18 10 4 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8l4-2"/><path d="M14 22v-4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v4"/><path d="M18 5v17"/><path d="M6 5v17"/><circle cx="12" cy="9" r="2"/></svg>
+              </div>
+              <div>
+                <h3>Higher Secondary Certificate (HSC) — Science</h3>
+                <p class="muted">Rajshahi Education Board Model School &amp; College, Rajshahi</p>
+                <p class="muted small" style="margin-top:0.25rem">Sep 2020 – Dec 2022</p>
+                <span class="pill">Grade: A+</span>
+                <span class="pill">GPA: 5.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="reveal card edu-card" style="transition-delay:300ms">
+            <div class="edu-row">
+              <div class="icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 6 8-4 8 4"/><path d="m18 10 4 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8l4-2"/><path d="M14 22v-4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v4"/><path d="M18 5v17"/><path d="M6 5v17"/><circle cx="12" cy="9" r="2"/></svg>
+              </div>
+              <div>
+                <h3>Secondary School Certificate (SSC)</h3>
+                <p class="muted">Islami Academy High School, Technical and Agriculture College, Bagha, Rajshahi</p>
+                <span class="pill">Grade: A+</span>
+                <span class="pill">GPA: 5.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="reveal section-heading">
+          <h2>Experience</h2>
+          <p class="subtitle">Roles &amp; responsibilities</p>
+          <div class="heading-bar"></div>
+          <p class="section-amount">5 roles &nbsp;·&nbsp; 2+ yrs active &nbsp;·&nbsp; Part-time &amp; voluntary</p>
+        </div>
+        <div class="edu-list" style="max-width:56rem;margin:0 auto">
+
+          <div class="reveal card edu-card" style="transition-delay:100ms">
+            <div class="edu-row">
+              <div class="icon-box icon-box-accent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div>
+                <h3>Senior Executive</h3>
+                <p class="muted">RUET Materials Club · Part-time</p>
+                <p class="muted small" style="margin-top:0.25rem">May 2026 – Present · 1 mo · Rajshahi, Bangladesh</p>
+                <span class="pill">Current</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal card edu-card" style="transition-delay:150ms">
+            <div class="edu-row">
+              <div class="icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              </div>
+              <div>
+                <h3>Script Evaluator</h3>
+                <p class="muted">UDVASH-উদ্ভাস · Part-time</p>
+                <p class="muted small" style="margin-top:0.25rem">Jan 2025 – Present · 1 yr 5 mos · Rajshahi, Bangladesh</p>
+                <span class="pill">Current</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal card edu-card" style="transition-delay:200ms">
+            <div class="edu-row">
+              <div class="icon-box icon-box-accent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </div>
+              <div>
+                <h3>Teacher</h3>
+                <p class="muted">Tuition HUB · Part-time</p>
+                <p class="muted small" style="margin-top:0.25rem">Feb 2024 – Present · 2 yrs 4 mos · Rajshahi, Bangladesh</p>
+                <p class="muted small italic" style="margin-top:0.35rem">Teaching HSC students in Physics, Chemistry &amp; Mathematics alongside university studies.</p>
+                <span class="pill">Current</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal card edu-card" style="transition-delay:250ms">
+            <div class="edu-row">
+              <div class="icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <div>
+                <h3>General Member</h3>
+                <p class="muted">RUET Debating Club (RUET DC) · Part-time</p>
+                <p class="muted small" style="margin-top:0.25rem">Jan 2024 – Present · 2 yrs 5 mos · Rajshahi, Bangladesh</p>
+                <span class="pill">Current</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal card edu-card" style="transition-delay:300ms">
+            <div class="edu-row">
+              <div class="icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
+              </div>
+              <div>
+                <h3>General Member</h3>
+                <p class="muted">Society of Computer Aided Designers RUET (SCADR) · Part-time</p>
+                <p class="muted small" style="margin-top:0.25rem">Jan 2024 – Present · 2 yrs 5 mos · Rajshahi, Bangladesh</p>
+                <span class="pill">Current</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="reveal section-heading">
+          <h2>Skills</h2>
+          <p class="subtitle">Tools &amp; competencies</p>
+          <div class="heading-bar"></div>
+          <p class="section-amount">7 core tools &nbsp;·&nbsp; Engineering design &nbsp;·&nbsp; Analysis &amp; communication</p>
+        </div>
+        <div class="grid grid-4">
+          <div class="reveal card skill-card" style="transition-delay:100ms">
+            <svg class="icon-primary" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            <h3>MATLAB</h3>
+            <span class="muted small">Analytical &amp; Simulation</span>
+          </div>
+          <div class="reveal card skill-card" style="transition-delay:150ms">
+            <svg class="icon-primary" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            <h3>Mendeley</h3>
+            <span class="muted small">Reference Management</span>
+          </div>
+          <div class="reveal card skill-card" style="transition-delay:200ms">
+            <svg class="icon-primary" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            <h3>AutoCAD</h3>
+            <span class="muted small">Moderate</span>
+          </div>
+          <div class="reveal card skill-card" style="transition-delay:250ms">
+            <svg class="icon-primary" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            <h3>SolidWorks</h3>
+            <span class="muted small">Moderate</span>
+          </div>
+          <div class="reveal card skill-card" style="transition-delay:300ms">
+            <svg class="icon-primary" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <h3>Analytical Skills</h3>
+            <span class="muted small">Problem Solving</span>
+          </div>
+          <div class="reveal card skill-card" style="transition-delay:350ms">
+            <svg class="icon-primary" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <h3>Leadership</h3>
+            <span class="muted small">Team Building</span>
+          </div>
+          <div class="reveal card skill-card" style="transition-delay:400ms">
+            <svg class="icon-primary" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
+            <h3>Microsoft Office</h3>
+            <span class="muted small">Proficient</span>
+          </div>
+          <div class="reveal card skill-card" style="transition-delay:450ms">
+            <svg class="icon-primary" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <h3>Communication</h3>
+            <span class="muted small">Strong</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Research -->
+    <section id="research" class="section">
+      <div class="container">
+        <div class="reveal section-heading">
+          <h2>Projects / Research</h2>
+          <p class="subtitle">Areas of interest</p>
+          <div class="heading-bar"></div>
+          <p class="section-amount">3 focus areas &nbsp;·&nbsp; Materials · Energy · Mechanics</p>
+        </div>
+        <div class="grid grid-3" style="max-width:80rem">
+          <div class="reveal card research-card" style="transition-delay:100ms">
+            <svg class="icon-accent" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+            <h3>Hydrogen Energy &amp; Storage</h3>
+            <p>Investigating hydrogen as a clean and sustainable energy carrier, with a focus on advanced storage methods including metal hydrides, chemical hydrogen storage, and nanomaterial-based solutions for safe and efficient storage.</p>
+          </div>
+          <div class="reveal card research-card" style="transition-delay:200ms">
+            <svg class="icon-accent" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6L4 20a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2L15 8V2"/><path d="M9 2h6"/></svg>
+            <h3>Advanced Engineering Materials</h3>
+            <p>Exploring research opportunities in metals, polymers, and advanced engineering materials for next-generation applications.</p>
+          </div>
+          <div class="reveal card research-card" style="transition-delay:300ms">
+            <svg class="icon-accent" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            <h3>Case Study on Fracture</h3>
+            <p>Conducted an in-depth case study on fracture mechanics (Semester 2-2), exploring failure analysis, crack propagation, and material behavior under stress.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Certifications -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <div class="reveal section-heading">
+          <h2>Licenses &amp; Certifications</h2>
+          <p class="subtitle">Recognised achievements</p>
+          <div class="heading-bar"></div>
+          <p class="section-amount">1 certification &nbsp;·&nbsp; Issued Dec 2025 &nbsp;·&nbsp; RUET Materials Club</p>
+        </div>
+        <div class="edu-list" style="max-width:56rem;margin:0 auto">
+          <div class="reveal card edu-card" style="transition-delay:100ms">
+            <div class="edu-row">
+              <div class="icon-box icon-box-accent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+              </div>
+              <div>
+                <h3>Seminar on Advanced Materials &amp; Technology</h3>
+                <p class="muted">RUET Materials Club</p>
+                <p class="muted small" style="margin-top:0.25rem">Issued Dec 2025 · Attended seminar on Research, Innovation and Technology</p>
+                <span class="pill">Certificate of Attendance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Languages -->
+    <section id="languages" class="section">
+      <div class="container">
+        <div class="reveal section-heading">
+          <h2>Languages</h2>
+          <p class="subtitle">Communication proficiency</p>
+          <div class="heading-bar"></div>
+          <p class="section-amount">2 languages &nbsp;·&nbsp; Native · Professional</p>
+        </div>
+        <div class="grid grid-3" style="max-width:28rem;margin:0 auto">
+          <div class="reveal card skill-card" style="transition-delay:100ms">
+            <svg class="icon-primary" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <h3>Bangla</h3>
+            <span class="muted small">Native / Bilingual</span>
+          </div>
+          <div class="reveal card skill-card" style="transition-delay:200ms">
+            <svg class="icon-primary" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <h3>English</h3>
+            <span class="muted small">Professional Working</span>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Tuition Promo -->
+    <section id="tuition" class="section">
+      <div class="container">
+        <div class="reveal section-heading">
+          <h2>Tuition Services</h2>
+          <p class="subtitle">Expert coaching for HSC Physics, Chemistry &amp; Mathematics</p>
+          <div class="heading-bar"></div>
+          <p class="section-amount">3 subjects &nbsp;·&nbsp; 2+ yrs experience &nbsp;·&nbsp; Flexible schedule</p>
+        </div>
+        <div class="reveal tuition-promo-card" style="transition-delay:100ms">
+          <div class="tuition-promo-inner">
+            <div class="tuition-text">
+              <div class="tuition-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                Available for Tutoring
+              </div>
+              <h3>HSC Physics, Chemistry &amp; Mathematics</h3>
+              <p>Providing focused, result-oriented tutoring for HSC level students. Building strong conceptual foundations with personalized attention and structured learning plans in Physics, Chemistry, and Mathematics to help students excel in their board exams.</p>
+              <ul class="tuition-features">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  HSC Physics — concept clarity &amp; problem solving
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  HSC Chemistry — reactions, theory &amp; numericals
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  HSC Mathematics — step-by-step approach
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  Personalized attention &amp; flexible schedule
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  Exam preparation &amp; practice sessions
+                </li>
+              </ul>
+              <a href="https://suhael-mahmud-saad.github.io/Tuition-Promo/" target="_blank" rel="noopener noreferrer" class="tuition-cta">
+                View Full Tuition Page
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+            <div class="tuition-visual">
+              <div class="tuition-icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <div class="tuition-stats">
+                <div class="tuition-stat">
+                  <span class="stat-num">2+</span>
+                  <span class="stat-label">Yrs Teaching</span>
+                </div>
+                <div class="tuition-stat">
+                  <span class="stat-num">3</span>
+                  <span class="stat-label">Subjects</span>
+                </div>
+                <div class="tuition-stat">
+                  <span class="stat-num">HSC</span>
+                  <span class="stat-label">Level</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="reveal section-heading">
+          <h2>Contact</h2>
+          <p class="subtitle">Let's connect</p>
+          <div class="heading-bar"></div>
+          <p class="section-amount">3 channels &nbsp;·&nbsp; Email · Phone · LinkedIn</p>
+        </div>
+        <div class="grid grid-3" style="max-width:48rem;margin:0 auto">
+          <div class="reveal card contact-card" style="transition-delay:100ms">
+            <svg class="icon-primary" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span class="contact-label">Email</span>
+            <a href="mailto:abdullah.kafi.mse@gmail.com" class="contact-value">abdullah.kafi.mse@gmail.com</a>
+          </div>
+          <div class="reveal card contact-card" style="transition-delay:200ms">
+            <svg class="icon-primary" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span class="contact-label">Phone / WhatsApp</span>
+            <div class="contact-row">
+              <a href="tel:01742812902" class="contact-value">01742812902</a>
+              <a href="https://wa.link/7jbjs1" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                <span>WhatsApp</span>
+              </a>
+            </div>
+          </div>
+          <div class="reveal card contact-card" style="transition-delay:300ms">
+            <svg class="icon-primary" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <span class="contact-label">LinkedIn</span>
+            <a href="http://www.linkedin.com/in/suhael-mahmud-saad" target="_blank" rel="noopener noreferrer" class="contact-value">Suhael MahMud Saad</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Direct Message -->
+    <section id="message" class="section">
+      <div class="container">
+        <div class="reveal section-heading">
+          <h2>Send a Message</h2>
+          <p class="subtitle">Have a question or want to connect? Drop me a message directly.</p>
+          <div class="heading-bar"></div>
+        </div>
+
+        <div class="reveal message-form-wrap" style="transition-delay:100ms">
+          <div class="message-form-card">
+
+            <!-- Success state -->
+            <div class="form-success" id="form-success">
+              <div class="form-success-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <h3>Message Sent!</h3>
+              <p>Thank you for reaching out. Suhael will get back to you soon.</p>
+            </div>
+
+            <!-- Form fields -->
+            <div id="contact-form-fields">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="msg-name">Your Name <span style="color:#ff6b6b">*</span></label>
+                  <input class="form-input" id="msg-name" type="text" placeholder="e.g. Rahim Uddin" autocomplete="name" />
+                  <span class="form-error-msg" id="err-name">Please enter your name.</span>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="msg-mobile">Mobile Number <span style="color:#ff6b6b">*</span></label>
+                  <input class="form-input" id="msg-mobile" type="tel" placeholder="e.g. 01700000000" autocomplete="tel" />
+                  <span class="form-error-msg" id="err-mobile">Please enter a valid mobile number.</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="msg-message">Your Question / Query <span style="color:#ff6b6b">*</span></label>
+                <textarea class="form-textarea" id="msg-message" placeholder="Write your question or query about Suhael here2026"></textarea>
+                <span class="form-error-msg" id="err-message">Please enter your message.</span>
+              </div>
+
+              <button class="form-send-btn" id="form-send-btn" onclick="sendMessage()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                Send Message
+              </button>
+
+              <div class="form-notice">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                Your message will be sent directly to <strong style="color:var(--text-secondary);margin-left:0.2rem">abdullah.kafi.mse@gmail.com</strong>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Suhael MahMud Saad<span class="footer-dot"></span>All rights reserved.</p>
+        <p style="font-size:0.78rem;margin-top:0.25rem;opacity:0.6">Materials Science &amp; Engineering · RUET</p>
+        <div style="margin-top:0.75rem">
+          <span class="visitor-counter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span id="visitor-count" class="visitor-counter-count">—</span>
+            <span>visitors</span>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+    // ============================================================
+    // MOLECULE / ATOM BACKGROUND ANIMATION
+    // ============================================================
+    (function() {
+      const canvas = document.getElementById('molecule-canvas');
+      const ctx = canvas.getContext('2d');
+
+      function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+      resize();
+      window.addEventListener('resize', resize);
+
+      const GREEN = 'rgba(0, 180, 230,';
+      const GREEN2 = 'rgba(0, 220, 255,';
+
+      // Atom node
+      class Atom {
+        constructor() { this.reset(true); }
+        reset(init) {
+          this.x = Math.random() * canvas.width;
+          this.y = init ? Math.random() * canvas.height : -20;
+          this.r = 5 + Math.random() * 7;
+          this.vx = (Math.random() - 0.5) * 0.35;
+          this.vy = (Math.random() - 0.5) * 0.35;
+          this.pulse = Math.random() * Math.PI * 2;
+          this.pulseSpeed = 0.018 + Math.random() * 0.022;
+          this.alpha = 0.3 + Math.random() * 0.55;
+          this.orbitAngle = Math.random() * Math.PI * 2;
+          this.orbitSpeed = (Math.random() - 0.5) * 0.008;
+          this.orbitRadius = 14 + Math.random() * 18;
+          this.hasOrbit = Math.random() > 0.55;
+          this.orbitElectrons = Math.floor(1 + Math.random() * 2);
+        }
+        update() {
+          this.x += this.vx;
+          this.y += this.vy;
+          this.pulse += this.pulseSpeed;
+          this.orbitAngle += this.orbitSpeed;
+          if (this.x < -40) this.x = canvas.width + 20;
+          if (this.x > canvas.width + 40) this.x = -20;
+          if (this.y < -40) this.y = canvas.height + 20;
+          if (this.y > canvas.height + 40) this.y = -20;
+        }
+        draw() {
+          const pulseFactor = 1 + 0.18 * Math.sin(this.pulse);
+          const r = this.r * pulseFactor;
+          const a = this.alpha;
+
+          // Nucleus glow
+          const grad = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, r * 4);
+          grad.addColorStop(0, GREEN2 + (a * 0.9) + ')');
+          grad.addColorStop(0.45, GREEN + (a * 0.45) + ')');
+          grad.addColorStop(1, GREEN + '0)');
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, r * 4, 0, Math.PI * 2);
+          ctx.fillStyle = grad;
+          ctx.fill();
+
+          // Core
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, r, 0, Math.PI * 2);
+          ctx.fillStyle = GREEN2 + a + ')';
+          ctx.fill();
+
+          // Electron orbits
+          if (this.hasOrbit) {
+            for (let e = 0; e < this.orbitElectrons; e++) {
+              const tilt = (Math.PI / 3) * e;
+              const orbitR = this.orbitRadius * (1 + e * 0.5);
+
+              // Orbit ring
+              ctx.save();
+              ctx.translate(this.x, this.y);
+              ctx.rotate(tilt);
+              ctx.beginPath();
+              ctx.ellipse(0, 0, orbitR, orbitR * 0.38, 0, 0, Math.PI * 2);
+              ctx.strokeStyle = GREEN + (a * 0.22) + ')';
+              ctx.lineWidth = 0.9;
+              ctx.stroke();
+
+              // Electron dot
+              const ea = this.orbitAngle + (e * Math.PI);
+              const ex = orbitR * Math.cos(ea);
+              const ey = orbitR * 0.38 * Math.sin(ea);
+              ctx.beginPath();
+              ctx.arc(ex, ey, 2.2, 0, Math.PI * 2);
+              ctx.fillStyle = GREEN2 + (a * 0.9) + ')';
+              ctx.fill();
+              ctx.restore();
+            }
+          }
+        }
+      }
+
+      // Bond / connection line between two atoms
+      function drawBond(a1, a2, dist, maxDist) {
+        const alpha = (1 - dist / maxDist) * 0.28;
+        ctx.beginPath();
+        ctx.moveTo(a1.x, a1.y);
+        ctx.lineTo(a2.x, a2.y);
+        ctx.strokeStyle = GREEN + alpha + ')';
+        ctx.lineWidth = 0.8;
+        ctx.stroke();
+      }
+
+      // Molecule cluster — a small fixed structure
+      class Molecule {
+        constructor() {
+          this.cx = Math.random() * canvas.width;
+          this.cy = Math.random() * canvas.height;
+          this.vx = (Math.random() - 0.5) * 0.18;
+          this.vy = (Math.random() - 0.5) * 0.18;
+          this.angle = Math.random() * Math.PI * 2;
+          this.rotSpeed = (Math.random() - 0.5) * 0.004;
+          this.alpha = 0.18 + Math.random() * 0.22;
+          const templates = [
+            // Water-like triangle
+            [[0,-16],[14,8],[-14,8]],
+            // Linear (CO2-like)
+            [[-22,0],[0,0],[22,0]],
+            // Tetrahedral (methane-like)
+            [[0,-18],[16,8],[-16,8],[0,14]],
+            // Benzene ring (6)
+            ...[[0]].map(() => {
+              const pts = [];
+              for (let i = 0; i < 6; i++) {
+                pts.push([18 * Math.cos(i * Math.PI / 3), 18 * Math.sin(i * Math.PI / 3)]);
+              }
+              return pts;
+            }),
+          ];
+          this.shape = templates[Math.floor(Math.random() * templates.length)];
+        }
+        update() {
+          this.cx += this.vx;
+          this.cy += this.vy;
+          this.angle += this.rotSpeed;
+          if (this.cx < -60) this.cx = canvas.width + 40;
+          if (this.cx > canvas.width + 60) this.cx = -40;
+          if (this.cy < -60) this.cy = canvas.height + 40;
+          if (this.cy > canvas.height + 60) this.cy = -40;
+        }
+        draw() {
+          const pts = this.shape.map(([px, py]) => {
+            const cos = Math.cos(this.angle), sin = Math.sin(this.angle);
+            return [
+              this.cx + px * cos - py * sin,
+              this.cy + px * sin + py * cos
+            ];
+          });
+          const a = this.alpha;
+
+          // Bonds
+          ctx.lineWidth = 0.9;
+          ctx.strokeStyle = GREEN + (a * 0.9) + ')';
+          for (let i = 0; i < pts.length; i++) {
+            for (let j = i + 1; j < pts.length; j++) {
+              const dx = pts[i][0] - pts[j][0];
+              const dy = pts[i][1] - pts[j][1];
+              const d = Math.sqrt(dx*dx+dy*dy);
+              if (d < 42) {
+                ctx.beginPath();
+                ctx.moveTo(pts[i][0], pts[i][1]);
+                ctx.lineTo(pts[j][0], pts[j][1]);
+                ctx.stroke();
+              }
+            }
+          }
+
+          // Atom nodes
+          for (const [px, py] of pts) {
+            const grad = ctx.createRadialGradient(px, py, 0, px, py, 9);
+            grad.addColorStop(0, GREEN2 + (a * 1.0) + ')');
+            grad.addColorStop(1, GREEN + '0)');
+            ctx.beginPath();
+            ctx.arc(px, py, 9, 0, Math.PI * 2);
+            ctx.fillStyle = grad;
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(px, py, 4, 0, Math.PI * 2);
+            ctx.fillStyle = GREEN2 + a + ')';
+            ctx.fill();
+          }
+        }
+      }
+
+      // Populate
+      const ATOM_COUNT = Math.min(60, Math.floor(window.innerWidth * window.innerHeight / 18000));
+      const MOL_COUNT = Math.min(14, Math.floor(window.innerWidth * window.innerHeight / 60000));
+      const atoms = Array.from({ length: ATOM_COUNT }, () => new Atom());
+      const molecules = Array.from({ length: MOL_COUNT }, () => new Molecule());
+      const MAX_BOND_DIST = 160;
+
+      function frame() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Draw bonds between nearby atoms
+        for (let i = 0; i < atoms.length; i++) {
+          for (let j = i + 1; j < atoms.length; j++) {
+            const dx = atoms[i].x - atoms[j].x;
+            const dy = atoms[i].y - atoms[j].y;
+            const d = Math.sqrt(dx * dx + dy * dy);
+            if (d < MAX_BOND_DIST) drawBond(atoms[i], atoms[j], d, MAX_BOND_DIST);
+          }
+        }
+
+        atoms.forEach(a => { a.update(); a.draw(); });
+        molecules.forEach(m => { m.update(); m.draw(); });
+
+        requestAnimationFrame(frame);
+      }
+      frame();
+    })();
+
+    // ============================================================
+    // Typewriter
+    (function() {
+      const roles = [
+        'Engineering Student',
+        'Research Enthusiast',
+        'Educator',
+      ];
+      const el = document.getElementById('typewriter');
+      if (!el) return;
+      let ri = 0, ci = 0, deleting = false;
+      function tick() {
+        const word = roles[ri];
+        if (!deleting) {
+          el.textContent = word.slice(0, ++ci);
+          if (ci === word.length) { deleting = true; return setTimeout(tick, 1800); }
+        } else {
+          el.textContent = word.slice(0, --ci);
+          if (ci === 0) { deleting = false; ri = (ri + 1) % roles.length; }
+        }
+        setTimeout(tick, deleting ? 55 : 95);
+      }
+      tick();
+    })();
+
+    // ============================================================
+    // Year
+      const y = document.getElementById('year');
+      if (y) y.textContent = new Date().getFullYear();
+
+      // ============================================================
+      // SCROLL REVEAL — cards fade/slide in as you scroll
+      // ============================================================
+      (function () {
+        // Hero elements show immediately
+        document.querySelectorAll('.hero .reveal, .hero [class*="reveal"]').forEach(function(el) {
+          el.classList.add('visible');
+        });
+
+        // Build observer — fires when 12% of element enters viewport
+        var obs = new IntersectionObserver(function(entries) {
+          entries.forEach(function(e) {
+            if (!e.isIntersecting) return;
+            var el = e.target;
+            el.classList.add('visible');
+            obs.unobserve(el);
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -48px 0px' });
+
+        // Helper: observe an element if not already visible
+        function watch(el) {
+          if (!el.classList.contains('visible')) obs.observe(el);
+        }
+
+        // 1. Section headings → scale-up reveal
+        document.querySelectorAll('.section-heading').forEach(function(h) {
+          if (!h.classList.contains('reveal-scale') && !h.classList.contains('reveal')) {
+            h.classList.add('reveal-scale');
+          }
+          watch(h);
+        });
+
+        // 2. Cards already tagged with .reveal in HTML — strip inline
+        //    transition-delay and reassign stagger within their parent grid
+        document.querySelectorAll('.grid').forEach(function(grid) {
+          var cards = grid.querySelectorAll('.card');
+          cards.forEach(function(card, i) {
+            // Remove any hard-coded inline delay that fights stagger
+            card.style.transitionDelay = '';
+            // Assign clean stagger delay (80 ms per card, max 560 ms)
+            var delay = Math.min(i * 80, 560);
+            card.style.transitionDelay = delay + 'ms';
+            if (!card.classList.contains('reveal') &&
+                !card.classList.contains('reveal-left') &&
+                !card.classList.contains('reveal-right')) {
+              card.classList.add('reveal');
+            }
+            watch(card);
+          });
+        });
+
+        // 3. Standalone edu-cards (outside grids) → alternate left / right
+        document.querySelectorAll('.edu-list .edu-card, .edu-card:not(.grid .edu-card)').forEach(function(card, i) {
+          if (!card.classList.contains('reveal') &&
+              !card.classList.contains('reveal-left') &&
+              !card.classList.contains('reveal-right')) {
+            card.classList.add(i % 2 === 0 ? 'reveal-left' : 'reveal-right');
+          }
+          card.style.transitionDelay = '';
+          watch(card);
+        });
+
+        // 4. Tuition promo card, message form, about-desc, etc.
+        document.querySelectorAll('.tuition-promo-card, .message-form-wrap, .about-desc').forEach(function(el) {
+          if (!el.classList.contains('reveal') && !el.classList.contains('reveal-fade')) {
+            el.classList.add('reveal');
+          }
+          el.style.transitionDelay = '';
+          watch(el);
+        });
+
+        // 5. Any remaining .reveal elements not yet observed
+        document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale, .reveal-fade').forEach(function(el) {
+          watch(el);
+        });
+      })();
+
+      // Nav toggle
+      const toggle = document.getElementById('nav-toggle');
+      const navLinks = document.getElementById('nav-links');
+      const iconMenu = document.getElementById('icon-menu');
+      const iconClose = document.getElementById('icon-close');
+      if (toggle && navLinks) {
+        toggle.addEventListener('click', () => {
+          const open = navLinks.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', open);
+          if (iconMenu) iconMenu.style.display = open ? 'none' : '';
+          if (iconClose) iconClose.style.display = open ? '' : 'none';
+        });
+        navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+          navLinks.classList.remove('open');
+          if (iconMenu) iconMenu.style.display = '';
+          if (iconClose) iconClose.style.display = 'none';
+        }));
+      }
+      // CV Download
+      const CV_DATA = 'cv.pdf';
+      // ============================================================
+      // SCROLL PROGRESS BAR
+      // ============================================================
+      (function() {
+        var bar = document.getElementById('scroll-progress-bar');
+        function updateProgress() {
+          var scrollTop = window.scrollY || window.pageYOffset;
+          var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+          var progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+          bar.style.width = Math.min(progress, 100) + '%';
+        }
+        window.addEventListener('scroll', updateProgress, { passive: true });
+        updateProgress();
+      })();
+
+      // ============================================================
+      // NAVBAR ACTIVE SECTION HIGHLIGHT ON SCROLL
+      // ============================================================
+      (function() {
+        const sectionIds = ['about','education','experience','skills','research','certifications','tuition','contact','message'];
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        function getActiveSection() {
+          const scrollY = window.scrollY || window.pageYOffset;
+          const offset = 80; // navbar height offset
+
+          // If near top (hero), no section active
+          if (scrollY < 100) return null;
+
+          let active = null;
+          for (let i = 0; i < sectionIds.length; i++) {
+            const el = document.getElementById(sectionIds[i]);
+            if (!el) continue;
+            const top = el.getBoundingClientRect().top + scrollY - offset;
+            if (scrollY >= top) {
+              active = sectionIds[i];
+            }
+          }
+          return active;
+        }
+
+        function updateActiveNav() {
+          const active = getActiveSection();
+          navLinks.forEach(function(link) {
+            const href = link.getAttribute('href');
+            if (active && href === '#' + active) {
+              link.classList.add('active');
+            } else {
+              link.classList.remove('active');
+            }
+          });
+        }
+
+        window.addEventListener('scroll', updateActiveNav, { passive: true });
+        updateActiveNav();
+      })();
+
+      window.downloadCV = function(e) {
+        e.preventDefault();
+        const a = document.createElement('a');
+        a.href = CV_DATA;
+        a.download = 'CV_Md_Suhael_MahMud_Saad.pdf';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      };
+
+
+
+      // ============================================================
+      // DIRECT MESSAGE FORM
+      // ============================================================
+      window.sendMessage = function() {
+        var nameEl    = document.getElementById('msg-name');
+        var mobileEl  = document.getElementById('msg-mobile');
+        var messageEl = document.getElementById('msg-message');
+        var btn       = document.getElementById('form-send-btn');
+
+        var errName    = document.getElementById('err-name');
+        var errMobile  = document.getElementById('err-mobile');
+        var errMessage = document.getElementById('err-message');
+
+        // Reset errors
+        [errName, errMobile, errMessage].forEach(function(e){ e.style.display = 'none'; });
+        [nameEl, mobileEl, messageEl].forEach(function(e){ e.style.borderColor = ''; });
+
+        var name    = nameEl.value.trim();
+        var mobile  = mobileEl.value.trim();
+        var message = messageEl.value.trim();
+
+        var valid = true;
+        if (!name) {
+          errName.style.display = 'block';
+          nameEl.style.borderColor = 'rgba(255,107,107,0.55)';
+          valid = false;
+        }
+        if (!mobile || !/^[0-9+\-\s]{7,15}$/.test(mobile)) {
+          errMobile.style.display = 'block';
+          mobileEl.style.borderColor = 'rgba(255,107,107,0.55)';
+          valid = false;
+        }
+        if (!message) {
+          errMessage.style.display = 'block';
+          messageEl.style.borderColor = 'rgba(255,107,107,0.55)';
+          valid = false;
+        }
+        if (!valid) return;
+
+        btn.disabled = true;
+        btn.textContent = 'Opening mail client…';
+
+        var subject = encodeURIComponent('Portfolio Enquiry from ' + name);
+        var body    = encodeURIComponent(
+          'Name: ' + name + '\n' +
+          'Mobile: ' + mobile + '\n\n' +
+          'Message:\n' + message
+        );
+        var mailtoLink = 'mailto:abdullah.kafi.mse@gmail.com?subject=' + subject + '&body=' + body;
+        window.location.href = mailtoLink;
+
+        setTimeout(function() {
+          document.getElementById('contact-form-fields').style.display = 'none';
+          var success = document.getElementById('form-success');
+          success.style.display = 'block';
+        }, 900);
+      };
+
+      // ============================================================
+      // HERO PARTICLE / STAR ANIMATION
+      // ============================================================
+      (function () {
+        var canvas = document.getElementById('hero-particle-canvas');
+        if (!canvas) return;
+        var ctx = canvas.getContext('2d');
+        var W, H, particles, mouse = { x: -9999, y: -9999 };
+        var PARTICLE_COUNT = 55;
+        var CONNECTION_DIST = 130;
+        var MOUSE_REPEL_DIST = 100;
+
+        function resize() {
+          var rect = canvas.parentElement.getBoundingClientRect();
+          W = canvas.width  = rect.width;
+          H = canvas.height = rect.height;
+        }
+
+        function rand(min, max) { return min + Math.random() * (max - min); }
+
+        function createParticle() {
+          return {
+            x: rand(0, W),
+            y: rand(0, H),
+            vx: rand(-0.25, 0.25),
+            vy: rand(-0.25, 0.25),
+            r: rand(1.2, 2.6),
+            alpha: rand(0.12, 0.35),
+            pulse: rand(0, Math.PI * 2),
+            pulseSpeed: rand(0.012, 0.030),
+            twinkleDir: Math.random() > 0.5 ? 1 : -1,
+          };
+        }
+
+        function init() {
+          resize();
+          particles = Array.from({ length: PARTICLE_COUNT }, createParticle);
+        }
+
+        // Track mouse relative to canvas
+        canvas.parentElement.addEventListener('mousemove', function (e) {
+          var rect = canvas.getBoundingClientRect();
+          mouse.x = e.clientX - rect.left;
+          mouse.y = e.clientY - rect.top;
+        }, { passive: true });
+        canvas.parentElement.addEventListener('mouseleave', function () {
+          mouse.x = -9999; mouse.y = -9999;
+        });
+
+        window.addEventListener('resize', function () {
+          init();
+        });
+
+        function drawStar(x, y, r, alpha) {
+          // Outer glow
+          var grd = ctx.createRadialGradient(x, y, 0, x, y, r * 3.5);
+          grd.addColorStop(0,   'rgba(0,212,255,' + (alpha * 0.9) + ')');
+          grd.addColorStop(0.4, 'rgba(0,180,220,' + (alpha * 0.35) + ')');
+          grd.addColorStop(1,   'rgba(0,212,255,0)');
+          ctx.beginPath();
+          ctx.arc(x, y, r * 3.5, 0, Math.PI * 2);
+          ctx.fillStyle = grd;
+          ctx.fill();
+
+          // Core dot
+          ctx.beginPath();
+          ctx.arc(x, y, r, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(180,240,255,' + alpha + ')';
+          ctx.fill();
+        }
+
+        function frame() {
+          ctx.clearRect(0, 0, W, H);
+
+          // Update & draw particles
+          for (var i = 0; i < particles.length; i++) {
+            var p = particles[i];
+            p.x += p.vx;
+            p.y += p.vy;
+
+            // Wrap edges
+            if (p.x < -10) p.x = W + 10;
+            if (p.x > W + 10) p.x = -10;
+            if (p.y < -10) p.y = H + 10;
+            if (p.y > H + 10) p.y = -10;
+
+            // Twinkle
+            p.pulse += p.pulseSpeed;
+            var twinkle = 0.55 + 0.45 * Math.sin(p.pulse);
+            var a = p.alpha * twinkle;
+
+            // Mouse repel
+            var dx = p.x - mouse.x, dy = p.y - mouse.y;
+            var dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < MOUSE_REPEL_DIST && dist > 0) {
+              var force = (MOUSE_REPEL_DIST - dist) / MOUSE_REPEL_DIST * 0.6;
+              p.x += (dx / dist) * force;
+              p.y += (dy / dist) * force;
+            }
+
+            drawStar(p.x, p.y, p.r, a);
+          }
+
+          // Draw connection lines between nearby particles
+          ctx.lineWidth = 0.5;
+          for (var i = 0; i < particles.length; i++) {
+            for (var j = i + 1; j < particles.length; j++) {
+              var dx = particles[i].x - particles[j].x;
+              var dy = particles[i].y - particles[j].y;
+              var d = Math.sqrt(dx * dx + dy * dy);
+              if (d < CONNECTION_DIST) {
+                var lineAlpha = (1 - d / CONNECTION_DIST) * 0.18;
+                ctx.beginPath();
+                ctx.moveTo(particles[i].x, particles[i].y);
+                ctx.lineTo(particles[j].x, particles[j].y);
+                ctx.strokeStyle = 'rgba(0,212,255,' + lineAlpha + ')';
+                ctx.stroke();
+              }
+            }
+          }
+
+          requestAnimationFrame(frame);
+        }
+
+        init();
+        frame();
+      })();
+
+      // ============================================================
+      // CUSTOM CURSOR
+      // ============================================================
+      (function() {
+        var dot  = document.getElementById('cursor-dot');
+        var ring = document.getElementById('cursor-ring');
+        if (!dot || !ring) return;
+
+        // Hide on touch devices
+        if (window.matchMedia('(pointer: coarse)').matches) {
+          dot.style.display = 'none';
+          ring.style.display = 'none';
+          return;
+        }
+
+        var mx = -100, my = -100; // start offscreen
+        var rx = -100, ry = -100; // ring lags behind
+
+        // Dot follows instantly
+        document.addEventListener('mousemove', function(e) {
+          mx = e.clientX; my = e.clientY;
+          dot.style.transform = 'translate(' + (mx - 4) + 'px, ' + (my - 4) + 'px)';
+        }, { passive: true });
+
+        // Ring follows with smooth lerp
+        (function animateRing() {
+          rx += (mx - rx) * 0.12;
+          ry += (my - ry) * 0.12;
+          ring.style.transform = 'translate(' + (rx - 18) + 'px, ' + (ry - 18) + 'px)';
+          requestAnimationFrame(animateRing);
+        })();
+
+        // Hover effect on interactive elements
+        var hoverTargets = 'a, button, [role="button"], input, textarea, label, .card, .nav-cta, .nav-toggle';
+        document.addEventListener('mouseover', function(e) {
+          if (e.target.closest(hoverTargets)) document.body.classList.add('cursor-hover');
+        });
+        document.addEventListener('mouseout', function(e) {
+          if (e.target.closest(hoverTargets)) document.body.classList.remove('cursor-hover');
+        });
+
+        // Click effect
+        document.addEventListener('mousedown', function() { document.body.classList.add('cursor-click'); });
+        document.addEventListener('mouseup',   function() { document.body.classList.remove('cursor-click'); });
+
+        // Hide when cursor leaves window
+        document.addEventListener('mouseleave', function() { dot.style.opacity = '0'; ring.style.opacity = '0'; });
+        document.addEventListener('mouseenter', function() { dot.style.opacity = '1'; ring.style.opacity = '1'; });
+      })();
+
+      // ============================================================
+      // BACK TO TOP BUTTON
+      // ============================================================
+      (function() {
+        var btn = document.getElementById('back-to-top');
+        if (!btn) return;
+        function toggleBtn() {
+          if ((window.scrollY || window.pageYOffset) > 400) {
+            btn.classList.add('visible');
+          } else {
+            btn.classList.remove('visible');
+          }
+        }
+        window.addEventListener('scroll', toggleBtn, { passive: true });
+        toggleBtn();
+      })();
+
+      // ============================================================
+      // VISITOR COUNTER (localStorage)
+      // ============================================================
+      (function() {
+        var el = document.getElementById('visitor-count');
+        if (!el) return;
+        var key = 'portfolio_visit_count';
+        var count = parseInt(localStorage.getItem(key) || '0', 10) + 1;
+        localStorage.setItem(key, count);
+        // Animate count up
+        var start = 0;
+        var end = count;
+        var duration = 800;
+        var startTime = null;
+        function step(ts) {
+          if (!startTime) startTime = ts;
+          var progress = Math.min((ts - startTime) / duration, 1);
+          var val = Math.floor(progress * end);
+          el.textContent = val.toLocaleString();
+          if (progress < 1) requestAnimationFrame(step);
+          else el.textContent = end.toLocaleString();
+        }
+        requestAnimationFrame(step);
+      })();
+
+    </script>
+  </body>
+</html>
